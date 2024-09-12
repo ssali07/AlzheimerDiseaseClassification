@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Alzheimer Disease Classification</title>
+    <style>
+        .container {
+          position: relative;
+        }
+        .mt-5{
+            color: #09116a;
+            background-color: aliceblue;
+        }
+        body {
+          position: absolute;
+          width: 100%;
+          text-align: center;
+          font-size: 18px;
+        }
+        .btn-primary{
+            margin-top: 15px;
+        }
+        </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mt-5">Alzheimer Disease Classification</h1>
+      <form method="post" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="file">Upload a grayscale image:</label>
+          <input type="file" class="form-control-file" id="file" name="file" required>
+        </div>
+        <button type="submit" class="btn btn-primary ">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        h1{
+            text-align: center;
+            color: #09116a;
+            background-color: aliceblue;
+        }
+        body{
+            text-align: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Prediction Results</h1>
+    <p>'0': Mild_Demented,
+        '1': Moderate_Demented,
+        '2': Non_Demented,
+        '3': Very_Mild_Demented</p>
+    <p>Probabilities of the given picture in each class</p>
+    <ul>
+        {% for prob in probabilities %}
+            <li>Class {{ loop.index0 }}: {{ prob }}%</li>
+        {% endfor %}
+    </ul>
+    <h2>Important Portion for Model's Decision</h2>
+    <img src="data:image/png;base64,{{ gradcam_map }}" alt="Grad-CAM">
+    <!-- <h2>Saliency Map</h2>
+    <img src="data:image/png;base64,{{ saliency_map }}" alt="Saliency Map"> -->
+    
+    <a href="/">Go back</a>
+</body>
+</html>
+
