@@ -25,7 +25,7 @@ This web application classifies Alzheimer's disease using a Convolutional Neural
   - torchvision for image transformations
 
 ## Getting Started
-To get a local copy of the project up and running, clone the repository using `git clone https://github.com/ssali07/AlzheimerDiseaseClassifiaction.git`, navigate into the project directory with `cd AlzheimerDiseaseClassifiaction`, ensure you have the trained model file (`model.pth`) placed in the project directory, install the required Python libraries using `pip install -r requirements.txt`, and run the Flask application with `python app.py`. Open your web browser and navigate to `http://127.0.0.1:5000/` to access the application.
+To get a local copy of the project up and running, clone the repository using `git clone https://github.com/ssali07/AlzheimerDiseaseClassification.git`, navigate into the project directory with `cd AlzheimerDiseaseClassification`, ensure you have the trained model file (`model.pth`) placed in the project directory, install the required Python libraries using `pip install -r requirements.txt`, and run the Flask application with `python app.py`. Open your web browser and navigate to `http://127.0.0.1:5000/` to access the application.
 
 ## Usage
 1. Upload an MRI image using the provided interface.
