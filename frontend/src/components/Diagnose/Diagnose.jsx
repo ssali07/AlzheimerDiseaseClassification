@@ -11,7 +11,7 @@ const Diagnose = () => {
     e.preventDefault();
     // 📤 TODO: Replace with API call to backend for Alzheimer classification
     if (file) {
-      console.log("File submitted:", file.name);
+      alert("File submitted:", file.name);
     } else {
       console.error("No file selected!");
     }
@@ -19,9 +19,9 @@ const Diagnose = () => {
 
   return (
     <div className="py-20 bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100 flex items-center justify-center px-4">
-      <div className=" backdrop-blur-md shadow-xl p-8 rounded-xl w-full max-w-xl">
+      <div className=" backdrop-blur-md shadow-[0_10px_40px_rgba(0,0,0,0.3)] p-8 rounded-xl w-full max-w-xl">
         <h1 className="text-3xl font-bold text-center text-blue-800 mb-6">
-          Alzheimer Disease Classification
+          Alzheimer Disease Diagnosis
         </h1>
         <form
           onSubmit={handleSubmit}
@@ -38,7 +38,7 @@ const Diagnose = () => {
               name="file"
               onChange={handleFileChange}
               required
-              className="block w-full border border-gray-300 rounded-md px-4 py-2  text-black"
+              className="block w-full border border-black-300 rounded-md px-4 py-2  text-black"
             />
           </div>
           <button
