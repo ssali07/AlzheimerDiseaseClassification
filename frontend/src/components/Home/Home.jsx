@@ -43,8 +43,8 @@ function Home() {
   const { title, description, button } = awarenessMessages[currentIndex];
 
   return (
-    <div className="py-30 bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100 flex flex-col justify-center items-center px-6 min-h-screen transition-all duration-700">
-      <div className="backdrop-blur-md rounded-xl shadow-xl max-w-3xl w-full p-10 text-center transition-all duration-700">
+    <div className="py-30 bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100 flex flex-col justify-center items-center px-6  transition-all duration-700">
+      <div className="backdrop-blur-md rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.3)] max-w-3xl w-full p-10 text-center transition-all duration-700">
         <h1 className="text-4xl md:text-6xl font-extrabold text-blue-800 mb-6 leading-tight">
           {title}
         </h1>
